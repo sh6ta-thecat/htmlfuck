@@ -1,0 +1,13 @@
+body{
+    color: #fff;
+    background: #0f0f10;
+    font-family: tahoma;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+    font-size: 15px;
+}
