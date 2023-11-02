@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buscador</title>
+</head>
+<body>
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="Escribe tu búsqueda">
+        <select id="search-type">
+            <option value="web">Webs</option>
+            <option value="imagen">Imágenes</option>
+        </select>
+        <button type="submit">Buscar</button>
+    </form>
+    <div id="results">
+        <!-- Los resultados de la búsqueda se mostrarán aquí -->
+    </div>
+
+    <script>
+        document.getElementById("search-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const searchInput = document.getElementById("search-input").value;
+            const searchType = document.getElementById("search-type").value;
+            const resultsContainer = document.getElementById("results");
+
+            // Lógica para realizar la búsqueda en función del tipo seleccionado
+            if (searchType === "web") {
+                resultsContainer.innerHTML = `Búsqueda web: ${searchInput}`;
+                // Aquí puedes agregar código para realizar una búsqueda web
+            } else if (searchType === "imagen") {
+                resultsContainer.innerHTML = `Búsqueda de imágenes: ${searchInput}`;
+                // Aquí puedes agregar código para realizar una búsqueda de imágenes
+            }
+        });
+    </script>
+</body>
+</html>
