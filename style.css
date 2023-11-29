@@ -1,0 +1,22 @@
+/* Estilo opcional para los enlaces */
+.url-container {
+    margin: 20px;
+}
+
+.url-container a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+.url-container a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el iframe */
+#iframe-container {
+    width: 80%;
+    height: 400px;
+    border: 1px solid #ccc;
+}
